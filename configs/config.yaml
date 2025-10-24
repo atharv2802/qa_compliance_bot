@@ -1,0 +1,27 @@
+app:
+  name: "QA Coach"
+  version: "1.0.0"
+  description: "Conversational QA Coach for Compliance"
+
+llm:
+  temperature: 0
+  max_tokens: 160
+  timeout_seconds: 5
+  max_retries: 2
+
+coach:
+  max_suggestion_length: 240
+  max_sentences: 2
+  confidence_threshold: 0.5
+
+performance:
+  target_p95_latency_ms: 900
+  warn_latency_ms: 800
+
+policies:
+  file: "./policies/policies.yaml"
+
+data:
+  synthetic_cases: "./data/synthetic/coach_cases.jsonl"
+  runs_db: "./data/qa_runs.duckdb"
+  reports_dir: "./data/reports"

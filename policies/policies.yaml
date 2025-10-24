@@ -1,0 +1,29 @@
+policies:
+  - id: ADV-6.2
+    name: No guaranteed returns
+    severity: high
+    patterns:
+      - "\\bguarantee(?:d)?\\b.*\\b(return|profit|yield)s?"
+      - "\\brisk[- ]?free\\b"
+  
+  - id: PII-SSN
+    name: No full SSN
+    severity: critical
+    patterns:
+      - "\\b\\d{3}-\\d{2}-\\d{4}\\b"
+      - "\\b\\d{9}\\b"
+  
+  - id: DISC-1.1
+    name: Required disclosure present
+    severity: medium
+    required_phrases:
+      - "this is not financial advice"
+      - "investments may lose value"
+  
+  - id: TONE
+    name: Inappropriate tone
+    severity: low
+    patterns:
+      - "\\bidiot\\b"
+      - "\\bstupid\\b"
+      - "\\bshut up\\b"

@@ -1,0 +1,250 @@
+{"policy_id": "CLEAN", "agent_draft": "I'm glad I could help clarify this for you. Please don't hesitate to reach out with more questions.", "context": "Wrapping up", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "You should see positive returns within 12-18 months based on trends.", "context": "Timeline projection", "severity": "medium"}
+{"policy_id": "PII-SSN", "agent_draft": "The SSN you provided (555443333) matches our records.", "context": "Verification check", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "I want to be transparent about the fees associated with this service.", "context": "Fee disclosure", "severity": "none"}
+{"policy_id": "TONE", "agent_draft": "Don't be an idiot - just follow the simple instructions I gave you.", "context": "Customer struggling with process", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "This fund guarantees consistent returns regardless of market conditions.", "context": "Explaining investment strategy", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "You'd have to be an idiot not to understand this concept.", "context": "Teaching moment", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee your investment will outperform the market.", "context": "Customer comparing options", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I'm here to answer any questions you have about this process.", "context": "Open support", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "While we can't guarantee returns, I can walk you through our investment strategy and associated risks.", "context": "Strategy explanation", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "Past data shows this strategy works well in all market conditions.", "context": "Market discussion", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "I can share information about different asset classes and their characteristics.", "context": "Investment education", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 12% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I understand this can be confusing. Let me break it down step by step.", "context": "Complex topic", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me connect you with a specialist who can provide more specific guidance.", "context": "Referral", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "You're looking at strong returns with this diversified approach.", "context": "Diversification benefits", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "You're being ridiculous and stupid about this whole situation.", "context": "Disagreement", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 20% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "Thank you for your patience as we work through this issue together.", "context": "Issue resolution", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "You'll definitely see your money grow by at least 25%.", "context": "Setting expectations", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "For security purposes, I need to confirm your SSN 444-33-2222.", "context": "Identity confirmation", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Thank you for your patience. Is there anything else you'd like to know?", "context": "Follow-up", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "This strategy ensures you'll always come out ahead.", "context": "Strategy explanation", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "Let me just verify - your SSN is 222-33-4444, correct?", "context": "Double-checking information", "severity": "critical"}
+{"policy_id": "ADV-6.2", "agent_draft": "I can guarantee you'll see profits of at least 8% this year.", "context": "Customer concerned about performance", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This account is risk-free and guarantees steady growth.", "context": "Account recommendation", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "Investors in this fund have enjoyed steady appreciation.", "context": "Fund discussion", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with all required disclosures for this product.", "context": "Disclosure delivery", "severity": "none"}
+{"policy_id": "TONE", "agent_draft": "This is idiotic - you should have known better.", "context": "Post-mistake discussion", "severity": "low"}
+{"policy_id": "TONE,DISC-1.1", "agent_draft": "Don't be an idiot - we've delivered 12% returns consistently for years.", "context": "Defending track record", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "Your concern is valid. Let's review your account details together.", "context": "Account review", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "This investment involves risk, including potential loss of principal. Would you like to review the risk factors?", "context": "Risk disclosure", "severity": "none"}
+{"policy_id": "PII-SSN", "agent_draft": "I see your full social 999-88-7777 here in the system.", "context": "System lookup", "severity": "critical"}
+{"policy_id": "ADV-6.2", "agent_draft": "I can guarantee you'll see profits of at least 15% this year.", "context": "Customer concerned about performance", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "I can confirm your social 222-33-4444 is correctly entered.", "context": "Data validation", "severity": "critical"}
+{"policy_id": "ADV-6.2", "agent_draft": "You'll definitely see your money grow by at least 12%.", "context": "Setting expectations", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "The portfolio has performed exceptionally well with minimal volatility.", "context": "Portfolio review", "severity": "medium"}
+{"policy_id": "ADV-6.2", "agent_draft": "It's totally safe and risk-free, with guaranteed returns.", "context": "Reassuring nervous customer", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "I can guarantee you'll see profits of at least 25% this year.", "context": "Customer concerned about performance", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our fund has consistently delivered 15% returns over the past five years.", "context": "Historical performance discussion", "severity": "medium"}
+{"policy_id": "PII-SSN", "agent_draft": "Your identification shows SSN 555443333 on our end.", "context": "ID verification", "severity": "critical"}
+{"policy_id": "ADV-6.2,TONE", "agent_draft": "Only an idiot would pass up these guaranteed risk-free returns.", "context": "Pressuring hesitant customer", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This investment guarantees monthly income starting immediately.", "context": "Income generation", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I apologize for the confusion. Let me correct that information for you.", "context": "Error correction", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let's review the prospectus together so you understand all aspects.", "context": "Document review", "severity": "none"}
+{"policy_id": "TONE", "agent_draft": "This is such a stupid question, I've already explained it twice.", "context": "Customer asking for clarification", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "You'll definitely see your money grow by at least 18%.", "context": "Setting expectations", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "Let me pull up your account - I have SSN 123456789 showing.", "context": "Account access", "severity": "critical"}
+{"policy_id": "ADV-6.2,DISC-1.1,TONE", "agent_draft": "You'd be stupid not to take these guaranteed 18% returns we've consistently delivered.", "context": "High-pressure sales with multiple violations", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with the relevant information to help you make an informed decision.", "context": "General inquiry", "severity": "none"}
+{"policy_id": "PII-SSN", "agent_draft": "I'm seeing SSN 666-55-7777 associated with this account.", "context": "Account review", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Returns vary based on market conditions and individual holdings. Let's review your specific situation.", "context": "Performance discussion", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'll send you the materials so you can review them at your own pace.", "context": "Documentation", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee 20% returns annually on this investment.", "context": "Customer asking about expected returns", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "Only idiots make that kind of mistake with their investments.", "context": "Reviewing error", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "I can assure you this investment will pay off handsomely.", "context": "Encouraging hesitant customer", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "Stop asking stupid questions and just do what I say.", "context": "Customer seeking guidance", "severity": "low"}
+{"policy_id": "ADV-6.2,TONE", "agent_draft": "Shut up and listen - I'm guaranteeing you'll make money here.", "context": "Aggressive sales approach", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 25% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "Seriously? That's the dumbest thing I've heard all day.", "context": "Customer suggestion", "severity": "low"}
+{"policy_id": "TONE", "agent_draft": "Shut up for a second and let me finish explaining.", "context": "Trying to explain", "severity": "low"}
+{"policy_id": "TONE", "agent_draft": "That's a really dumb question that you should already know.", "context": "Customer asking basics", "severity": "low"}
+{"policy_id": "PII-SSN", "agent_draft": "The social security number 333-22-1111 is required for this transaction.", "context": "Transaction processing", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Investments carry risk and may lose value. Let's discuss your risk tolerance and goals.", "context": "Risk assessment", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "This investment strategy has shown excellent growth historically.", "context": "Strategy explanation", "severity": "medium"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee 10% returns annually on this investment.", "context": "Customer asking about expected returns", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "Your account ending in 2222 has full SSN 444-33-2222 registered.", "context": "Account details", "severity": "critical"}
+{"policy_id": "ADV-6.2", "agent_draft": "Trust me, this is a guaranteed winner - I've seen it work for hundreds of clients.", "context": "Sharing experience", "severity": "high"}
+{"policy_id": "PII-SSN,ADV-6.2", "agent_draft": "I found your SSN 123-45-6789 and can guarantee great returns on your account.", "context": "Security breach during sales pitch", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "I'm required to disclose that all investments involve risk, including loss of principal.", "context": "Required disclosure", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I can compare different options and their characteristics to help you decide.", "context": "Comparison", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'd be happy to schedule a follow-up call to discuss this in more detail.", "context": "Scheduling", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I value your trust and want to ensure you have all the information you need.", "context": "Building relationship", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "This retirement account guarantees you'll have enough to retire comfortably.", "context": "Retirement planning", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Your college fund is guaranteed to cover all tuition costs.", "context": "Education planning", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I understand this is an important decision. Take your time to consider all factors.", "context": "Decision support", "severity": "none"}
+{"policy_id": "TONE", "agent_draft": "Just shut your mouth and let me help you properly.", "context": "Customer talking over agent", "severity": "low"}
+{"policy_id": "PII-SSN", "agent_draft": "Your social security number 111223333 is on file for verification.", "context": "Account verification", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Your financial well-being is important. Let's make sure we get this right.", "context": "Showing care", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "For your security, I'll verify your identity using the last four digits only.", "context": "Verification", "severity": "none"}
+{"policy_id": "PII-SSN", "agent_draft": "Please confirm your full social security number: 666-55-7777.", "context": "Requesting confirmation", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Let me explain how diversification can help manage risk in your portfolio.", "context": "Education", "severity": "none"}
+{"policy_id": "ADV-6.2,DISC-1.1,TONE", "agent_draft": "Shut up and invest - we guarantee you'll see the same 15% we've always delivered.", "context": "Aggressive pitch combining violations", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "You'll likely see significant growth over the next few years.", "context": "Long-term outlook", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our clients typically see 6% annual gains on average.", "context": "Average performance sharing", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "Stop being so dumb about this, it's really straightforward.", "context": "Customer confused", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "You're guaranteed to make money with our managed portfolio.", "context": "Portfolio recommendation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "I guarantee you won't regret choosing this portfolio.", "context": "Closing sale", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "You won't lose a penny with this risk-free strategy.", "context": "Customer worried about losses", "severity": "high"}
+{"policy_id": "TONE,DISC-1.1", "agent_draft": "Stop being stupid - the data clearly shows 15% average gains.", "context": "Customer questioning performance claims", "severity": "medium"}
+{"policy_id": "PII-SSN", "agent_draft": "I've updated your records with SSN 222-33-4444.", "context": "Record update", "severity": "critical"}
+{"policy_id": "ADV-6.2,TONE", "agent_draft": "Don't be stupid - obviously we guarantee returns on this investment.", "context": "Customer questioning guarantee claims", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "No other firm can guarantee the returns we deliver.", "context": "Differentiating from competitors", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "While past performance doesn't indicate future results, I can guarantee similar outcomes.", "context": "Performance discussion with disclaimer", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "Past performance isn't indicative of future results, but I can share our historical track record if you'd like.", "context": "Performance discussion", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "This diversified portfolio guarantees protection against market downturns.", "context": "Risk mitigation discussion", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "I promise you'll see excellent returns within six months.", "context": "Timeline discussion", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "This stupid platform is so easy to use, I don't understand your problem.", "context": "Technical support", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "I guarantee you'll double your money in three years.", "context": "Long-term projection", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "What an idiotic way to handle your finances.", "context": "Reviewing customer decisions", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "Our guaranteed yields are the highest you'll find anywhere.", "context": "Marketing pitch", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "Are you really that stupid? Let me spell it out for you.", "context": "Customer making mistake", "severity": "low"}
+{"policy_id": "ADV-6.2,DISC-1.1", "agent_draft": "This strategy guarantees profits - just look at our 15% average annual returns.", "context": "Persuasive pitch using past performance", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Look, I can personally guarantee this will work out for you.", "context": "Building trust with customer", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "The risk is low and the potential gains are substantial.", "context": "Risk-reward discussion", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "You're acting like an idiot - this is standard procedure.", "context": "Customer questioning process", "severity": "low"}
+{"policy_id": "ADV-6.2", "agent_draft": "Between you and me, this is basically guaranteed money.", "context": "Creating urgency", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I'll need to verify some information, but I won't ask for your full SSN over the phone.", "context": "Security protocols", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I appreciate your feedback on this matter. How else can I assist you today?", "context": "Closing conversation", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "There are no guarantees in investing, but I can help you understand the potential scenarios.", "context": "Risk discussion", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm happy to explain our fee structure and how it compares to industry standards.", "context": "Fee inquiry", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our investment approach yields strong, consistent returns.", "context": "Methodology explanation", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Historically, this fund has outperformed the S&P 500 by 8%.", "context": "Benchmark comparison", "severity": "medium"}
+{"policy_id": "ADV-6.2,DISC-1.1", "agent_draft": "We guarantee 20% returns based on our five-year track record of consistent growth.", "context": "Sales pitch combining guarantee with historical data", "severity": "high"}
+{"policy_id": "PII-SSN,TONE", "agent_draft": "Stop being stupid - your SSN 987-65-4321 is right here in the system.", "context": "Frustrated agent revealing PII", "severity": "critical"}
+{"policy_id": "DISC-1.1", "agent_draft": "This has been our best-performing product with 6% returns.", "context": "Product recommendation", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "Shut up about the fees and focus on the returns.", "context": "Fee discussion", "severity": "low"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect solid returns based on our proven track record.", "context": "Setting expectations", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "That's a great question. Let me clarify the process for you.", "context": "Customer inquiry", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm here to help you understand all aspects of this decision.", "context": "Decision support", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "I'd put my own money in this guaranteed investment in a heartbeat.", "context": "Personal endorsement", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I appreciate your patience while I look into this for you.", "context": "Research request", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee this investment will beat inflation every year.", "context": "Inflation concerns", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This is a completely risk-free investment opportunity.", "context": "Customer asking about risks", "severity": "high"}
+{"policy_id": "TONE", "agent_draft": "What kind of stupid approach is that? That makes no sense.", "context": "Customer's strategy discussion", "severity": "low"}
+{"policy_id": "CLEAN", "agent_draft": "Let me walk you through the options and their respective risk profiles.", "context": "Options discussion", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Before we proceed, I need to ensure this aligns with your investment objectives.", "context": "Suitability check", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee better returns than any competitor in the market.", "context": "Competitive comparison", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with the documentation so you can review it at your convenience.", "context": "Information request", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Would you like me to explain how market volatility affects different investment types?", "context": "Market education", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I can see why that would concern you. Let's address it together.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'll be upfront about both the potential benefits and risks involved.", "context": "Balanced discussion", "severity": "none"}
+{"policy_id": "ADV-6.2,DISC-1.1", "agent_draft": "I can guarantee similar results to our historical 18% yearly gains.", "context": "Setting expectations based on history", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our track record speaks for itself - consistent profitability.", "context": "Track record discussion", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "Don't be stupid - everyone knows you should diversify.", "context": "Basic advice", "severity": "low"}
+{"policy_id": "CLEAN", "agent_draft": "Let me access your account using secure authentication methods.", "context": "Account access", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "You're guaranteed to see returns within the first quarter.", "context": "Short-term expectations", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect similar results based on historical patterns.", "context": "Pattern analysis", "severity": "medium"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee 25% returns annually on this investment.", "context": "Customer asking about expected returns", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "Thank you for bringing this to my attention. Let me investigate and get back to you.", "context": "Issue reported", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Would it be helpful if I walked through a hypothetical scenario to illustrate this?", "context": "Teaching approach", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "This product has specific features and limitations that I should explain.", "context": "Product details", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "While past results show trends, future outcomes depend on many factors we can discuss.", "context": "Historical analysis", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "This allocation has produced 10% average annual returns.", "context": "Asset allocation review", "severity": "medium"}
+{"policy_id": "TONE", "agent_draft": "Just shut up and listen to what I'm telling you.", "context": "Customer interrupting", "severity": "low"}
+{"policy_id": "DISC-1.1", "agent_draft": "The numbers show excellent performance across the board.", "context": "Performance review", "severity": "medium"}
+{"policy_id": "TONE,DISC-1.1", "agent_draft": "Just shut up and look at our amazing 20% historical returns.", "context": "Performance discussion with inappropriate tone", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "Let me explain exactly how this process works from start to finish.", "context": "Process explanation", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "Even though markets fluctuate, we guarantee consistent returns for our clients.", "context": "Market volatility discussion", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "The data clearly shows upward trends and positive outcomes.", "context": "Data analysis", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "I understand your concern. Let me explain the details so you can decide what's best for you.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "We promise consistent profits year after year.", "context": "Long-term planning discussion", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "There's zero risk involved - your principal is 100% guaranteed.", "context": "Addressing safety concerns", "severity": "high"}
+{"policy_id": "PII-SSN", "agent_draft": "Your SSN 123456789 needs to be verified before we proceed.", "context": "Pre-transaction check", "severity": "critical"}
+{"policy_id": "PII-SSN", "agent_draft": "I've located your account using SSN 123456789.", "context": "File lookup", "severity": "critical"}
+{"policy_id": "CLEAN", "agent_draft": "Let me summarize what we've discussed to ensure we're on the same page.", "context": "Confirmation", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "Every single client who's invested here has seen guaranteed positive returns.", "context": "Success story sharing", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "This conservative strategy still delivers 15% annually.", "context": "Conservative approach", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "I'll make sure this gets resolved properly. Here's what I'll do next.", "context": "Action plan", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me walk you through the options and their respective risk profiles.", "context": "Options discussion", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I can see why that would concern you. Let's address it together.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm required to disclose that all investments involve risk, including loss of principal.", "context": "Required disclosure", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "That's a great question. Let me clarify the process for you.", "context": "Customer inquiry", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'll send you the materials so you can review them at your own pace.", "context": "Documentation", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I can compare different options and their characteristics to help you decide.", "context": "Comparison", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Thank you for your patience. Is there anything else you'd like to know?", "context": "Follow-up", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with the documentation so you can review it at your convenience.", "context": "Information request", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with all required disclosures for this product.", "context": "Disclosure delivery", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I understand your concern. Let me explain the details so you can decide what's best for you.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect solid returns based on our proven track record.", "context": "Setting expectations", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our clients typically see 8% annual gains on average.", "context": "Average performance sharing", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You'll likely see significant growth over the next few years.", "context": "Long-term outlook", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our fund has consistently delivered 15% returns over the past five years.", "context": "Historical performance discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "This allocation has produced 18% average annual returns.", "context": "Asset allocation review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our track record speaks for itself - consistent profitability.", "context": "Track record discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The numbers show excellent performance across the board.", "context": "Performance review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You should see positive returns within 12-18 months based on trends.", "context": "Timeline projection", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Past data shows this strategy works well in all market conditions.", "context": "Market discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect similar results based on historical patterns.", "context": "Pattern analysis", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The risk is low and the potential gains are substantial.", "context": "Risk-reward discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The numbers show excellent performance across the board.", "context": "Performance review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect similar results based on historical patterns.", "context": "Pattern analysis", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "This allocation has produced 6% average annual returns.", "context": "Asset allocation review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our track record speaks for itself - consistent profitability.", "context": "Track record discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our fund has consistently delivered 12% returns over the past five years.", "context": "Historical performance discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You'll likely see significant growth over the next few years.", "context": "Long-term outlook", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our investment approach yields strong, consistent returns.", "context": "Methodology explanation", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "This conservative strategy still delivers 10% annually.", "context": "Conservative approach", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our clients typically see 6% annual gains on average.", "context": "Average performance sharing", "severity": "medium"}
+{"policy_id": "ADV-6.2", "agent_draft": "This is a completely risk-free investment opportunity.", "context": "Customer asking about risks", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Look, I can personally guarantee this will work out for you.", "context": "Building trust with customer", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 8% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This account is risk-free and guarantees steady growth.", "context": "Account recommendation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This fund guarantees consistent returns regardless of market conditions.", "context": "Explaining investment strategy", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "There's zero risk involved - your principal is 100% guaranteed.", "context": "Addressing safety concerns", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Every single client who's invested here has seen guaranteed positive returns.", "context": "Success story sharing", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Our guaranteed yields are the highest you'll find anywhere.", "context": "Marketing pitch", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "We guarantee better returns than any competitor in the market.", "context": "Competitive comparison", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Even though markets fluctuate, we guarantee consistent returns for our clients.", "context": "Market volatility discussion", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "You'll likely see significant growth over the next few years.", "context": "Long-term outlook", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our fund has consistently delivered 8% returns over the past five years.", "context": "Historical performance discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Investors in this fund have enjoyed steady appreciation.", "context": "Fund discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The data clearly shows upward trends and positive outcomes.", "context": "Data analysis", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The numbers show excellent performance across the board.", "context": "Performance review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "This allocation has produced 12% average annual returns.", "context": "Asset allocation review", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "The risk is low and the potential gains are substantial.", "context": "Risk-reward discussion", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "Historically, this fund has outperformed the S&P 500 by 12%.", "context": "Benchmark comparison", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "This investment strategy has shown excellent growth historically.", "context": "Strategy explanation", "severity": "medium"}
+{"policy_id": "DISC-1.1", "agent_draft": "You can expect similar results based on historical patterns.", "context": "Pattern analysis", "severity": "medium"}
+{"policy_id": "CLEAN", "agent_draft": "Would it be helpful if I walked through a hypothetical scenario to illustrate this?", "context": "Teaching approach", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'd be happy to schedule a follow-up call to discuss this in more detail.", "context": "Scheduling", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "For your security, I'll verify your identity using the last four digits only.", "context": "Verification", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I appreciate your patience while I look into this for you.", "context": "Research request", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "There are no guarantees in investing, but I can help you understand the potential scenarios.", "context": "Risk discussion", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "While we can't guarantee returns, I can walk you through our investment strategy and associated risks.", "context": "Strategy explanation", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me provide you with all required disclosures for this product.", "context": "Disclosure delivery", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me explain how diversification can help manage risk in your portfolio.", "context": "Education", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm here to answer any questions you have about this process.", "context": "Open support", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let's review the prospectus together so you understand all aspects.", "context": "Document review", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "This retirement account guarantees you'll have enough to retire comfortably.", "context": "Retirement planning", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "It's totally safe and risk-free, with guaranteed returns.", "context": "Reassuring nervous customer", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Every single client who's invested here has seen guaranteed positive returns.", "context": "Success story sharing", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "No other firm can guarantee the returns we deliver.", "context": "Differentiating from competitors", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This fund guarantees consistent returns regardless of market conditions.", "context": "Explaining investment strategy", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This investment guarantees monthly income starting immediately.", "context": "Income generation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This strategy ensures you'll always come out ahead.", "context": "Strategy explanation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "You're guaranteed to make money with our managed portfolio.", "context": "Portfolio recommendation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 5% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Trust me, this is a guaranteed winner - I've seen it work for hundreds of clients.", "context": "Sharing experience", "severity": "high"}
+{"policy_id": "CLEAN", "agent_draft": "I value your trust and want to ensure you have all the information you need.", "context": "Building relationship", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me explain how diversification can help manage risk in your portfolio.", "context": "Education", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm required to disclose that all investments involve risk, including loss of principal.", "context": "Required disclosure", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "For your security, I'll verify your identity using the last four digits only.", "context": "Verification", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I understand your concern. Let me explain the details so you can decide what's best for you.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "Let me summarize what we've discussed to ensure we're on the same page.", "context": "Confirmation", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm happy to explain our fee structure and how it compares to industry standards.", "context": "Fee inquiry", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I can see why that would concern you. Let's address it together.", "context": "Addressing concerns", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm here to answer any questions you have about this process.", "context": "Open support", "severity": "none"}
+{"policy_id": "CLEAN", "agent_draft": "I'm here to help you understand all aspects of this decision.", "context": "Decision support", "severity": "none"}
+{"policy_id": "ADV-6.2", "agent_draft": "This is a completely risk-free investment opportunity.", "context": "Customer asking about risks", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "While past performance doesn't indicate future results, I can guarantee similar outcomes.", "context": "Performance discussion with disclaimer", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "This investment guarantees monthly income starting immediately.", "context": "Income generation", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Trust me, this is a guaranteed winner - I've seen it work for hundreds of clients.", "context": "Sharing experience", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "You're guaranteed to see returns within the first quarter.", "context": "Short-term expectations", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Your college fund is guaranteed to cover all tuition costs.", "context": "Education planning", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "I'd put my own money in this guaranteed investment in a heartbeat.", "context": "Personal endorsement", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "We promise consistent profits year after year.", "context": "Long-term planning discussion", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "You'll definitely see your money grow by at least 25%.", "context": "Setting expectations", "severity": "high"}
+{"policy_id": "ADV-6.2", "agent_draft": "Based on our track record, I can guarantee you'll see 25% gains.", "context": "Reviewing historical data", "severity": "high"}
+{"policy_id": "DISC-1.1", "agent_draft": "Our investment approach yields strong, consistent returns.", "context": "Methodology explanation", "severity": "medium"}
