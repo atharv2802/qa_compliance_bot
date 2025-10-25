@@ -26,7 +26,11 @@ load_dotenv()
 # Configuration
 MODE = os.getenv("MODE", "local")
 API_HOST = os.getenv("API_HOST", "0.0.0.0" if MODE == "production" else "127.0.0.1")
-API_PORT = int(os.getenv("API_PORT", "10000" if MODE == "production" else "8000"))
+
+# Handle Render's PORT variable (takes precedence over API_PORT)
+port_str = os.getenv("PORT") or os.getenv("API_PORT") or ("10000" if MODE == "production" else "8000")
+API_PORT = int(port_str)
+
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "").split(",") if os.getenv("CORS_ORIGINS") else ["*"]
 
 # Database connection

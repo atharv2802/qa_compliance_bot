@@ -56,8 +56,7 @@ services:
       # API Configuration
       - key: API_HOST
         value: 0.0.0.0
-      - key: API_PORT
-        value: $PORT
+      # Note: PORT is automatically provided by Render
 
       # CORS - update with dashboard URL after deployment
       - key: CORS_ORIGINS
@@ -122,10 +121,7 @@ services:
         value: /tmp/data
       - key: RUNS_DB
         value: /tmp/qa_runs.duckdb
-
-      # Streamlit Configuration
-      - key: STREAMLIT_PORT
-        value: $PORT
+      # Note: PORT is automatically provided by Render
 
       # Logging
       - key: LOG_LEVEL
