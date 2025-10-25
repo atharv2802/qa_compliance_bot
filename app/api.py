@@ -23,6 +23,12 @@ from app.evals.judge import evaluate_suggestion, JudgeResponse
 # Load environment variables
 load_dotenv()
 
+# Configuration
+MODE = os.getenv("MODE", "local")
+API_HOST = os.getenv("API_HOST", "0.0.0.0" if MODE == "production" else "127.0.0.1")
+API_PORT = int(os.getenv("API_PORT", "10000" if MODE == "production" else "8000"))
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", "").split(",") if os.getenv("CORS_ORIGINS") else ["*"]
+
 # Database connection
 DB_PATH = os.getenv("RUNS_DB", "./data/qa_runs.duckdb")
 db_conn = None
@@ -75,7 +81,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -168,6 +174,7 @@ async def root():
         "name": "QA Coach API",
         "version": "1.0.0",
         "status": "running",
+        "mode": MODE,
         "docs": "/docs",
         "health": "/health",
         "endpoints": {
@@ -457,4 +464,6 @@ async def evaluate_with_judge(request: EvaluateRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    print(f"Starting QA Coach API in {MODE} mode...")
+    print(f"Server: {API_HOST}:{API_PORT}")
+    uvicorn.run(app, host=API_HOST, port=API_PORT)

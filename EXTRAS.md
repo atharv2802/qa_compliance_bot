@@ -6,17 +6,244 @@ This document consolidates important information from development, troubleshooti
 
 ## Table of Contents
 
-1. [Multi-Provider LLM Setup](#multi-provider-llm-setup)
-2. [Evaluation System (LLM-as-a-Judge)](#evaluation-system)
-3. [PII Protection System](#pii-protection-system)
-4. [Dynamic Response Generation](#dynamic-response-generation)
-5. [Database Concurrency Solution](#database-concurrency-solution)
-6. [Testing Guide](#testing-guide)
-7. [Troubleshooting](#troubleshooting)
-8. [Development History](#development-history)
-9. [System Improvements - Enhanced LLM Responses](#system-improvements---enhanced-llm-responses)
-10. [V3_Enhanced Prompt Implementation](#v3_enhanced-prompt-implementation)
-11. [Prompt Evolution: V2 → V3_Enhanced](#prompt-evolution-v2--v3_enhanced)
+1. [Deployment Guide](#deployment-guide)
+2. [Multi-Provider LLM Setup](#multi-provider-llm-setup)
+3. [Evaluation System (LLM-as-a-Judge)](#evaluation-system)
+4. [PII Protection System](#pii-protection-system)
+5. [Dynamic Response Generation](#dynamic-response-generation)
+6. [Database Concurrency Solution](#database-concurrency-solution)
+7. [Testing Guide](#testing-guide)
+8. [Troubleshooting](#troubleshooting)
+9. [Development History](#development-history)
+10. [System Improvements - Enhanced LLM Responses](#system-improvements---enhanced-llm-responses)
+11. [V3_Enhanced Prompt Implementation](#v3_enhanced-prompt-implementation)
+12. [Prompt Evolution: V2 → V3_Enhanced](#prompt-evolution-v2--v3_enhanced)
+
+---
+
+## Deployment Guide
+
+### Quick Start - Local Development (5 minutes)
+
+```bash
+# 1. Clone and setup
+git clone https://github.com/atharv2802/qa_compliance_bot.git
+cd qa_compliance_bot
+python -m venv venv
+venv\Scripts\activate  # Windows: venv\Scripts\activate | Linux/Mac: source venv/bin/activate
+pip install -r requirements.txt
+
+# 2. Configure environment
+copy .env.example .env  # Windows | Linux/Mac: cp .env.example .env
+# Edit .env and add your API keys
+
+# 3. Run
+python start.py
+```
+
+**Access Points:**
+- ✅ API: http://localhost:8000
+- ✅ API Docs: http://localhost:8000/docs
+- ✅ Dashboard: http://localhost:8501
+
+### Production Deployment - Render (10 minutes)
+
+#### Step 1: Prepare Repository
+```bash
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+```
+
+#### Step 2: Deploy to Render
+1. Go to https://render.com
+2. Click **"New"** → **"Blueprint"**
+3. Connect your GitHub repository
+4. Select `qa_compliance_bot`
+5. Click **"Apply"**
+
+Render will automatically create:
+- ✅ `qa-compliance-api` service (FastAPI backend)
+- ✅ `qa-compliance-dashboard` service (Streamlit UI)
+
+#### Step 3: Configure Environment Variables
+
+**For qa-compliance-api service:**
+1. Navigate to service → **Environment** tab
+2. Add the following secret keys:
+   - `GROQ_API_KEY`: your_groq_api_key_here
+   - `OPENAI_API_KEY`: your_openai_api_key_here
+   - `ANTHROPIC_API_KEY`: your_anthropic_key (optional)
+3. Click **"Save Changes"**
+
+**For qa-compliance-dashboard service:**
+1. Add the same API keys as above
+2. Update `API_URL` to: `https://qa-compliance-api.onrender.com`
+3. Click **"Save Changes"**
+
+#### Step 4: Update CORS (Important!)
+In **qa-compliance-api** environment variables:
+- Set `CORS_ORIGINS` to: `https://qa-compliance-dashboard.onrender.com`
+
+#### Step 5: Verify Deployment
+- ✅ API Health: `https://qa-compliance-api.onrender.com/health`
+- ✅ Dashboard: `https://qa-compliance-dashboard.onrender.com`
+
+### Environment Variables Reference
+
+| Variable | Local Value | Production Value | Required |
+|----------|-------------|------------------|----------|
+| `MODE` | `local` | `production` | Yes |
+| `GROQ_API_KEY` | Your key | Your key | Yes (or other provider) |
+| `OPENAI_API_KEY` | Your key | Your key | Yes (or other provider) |
+| `ANTHROPIC_API_KEY` | Your key | Your key | Optional |
+| `API_URL` | `http://localhost:8000` | `https://qa-compliance-api.onrender.com` | Yes (dashboard) |
+| `API_HOST` | `127.0.0.1` | `0.0.0.0` | Auto-configured |
+| `API_PORT` | `8000` | `10000` | Auto-configured |
+| `CORS_ORIGINS` | `*` | `https://qa-compliance-dashboard.onrender.com` | Yes (API) |
+
+### Deployment Architecture
+
+**Local Mode:**
+```
+┌─────────────────┐         ┌──────────────────┐
+│   localhost     │         │   localhost      │
+│   :8000         │◄────────│   :8501          │
+│   (API)         │         │   (Dashboard)    │
+└────────┬────────┘         └──────────────────┘
+         │
+         ▼
+    ┌─────────┐
+    │ DuckDB  │
+    │ (local) │
+    └─────────┘
+```
+
+**Production Mode (Render):**
+```
+┌──────────────────────┐         ┌─────────────────────────┐
+│ qa-compliance-api    │         │ qa-compliance-dashboard │
+│ .onrender.com        │◄────────│ .onrender.com           │
+│ (API)                │  HTTPS  │ (Streamlit)             │
+└──────────┬───────────┘         └─────────────────────────┘
+           │
+           ▼
+    ┌──────────────┐
+    │ Persistent   │
+    │ Disk (1GB)   │
+    │ DuckDB       │
+    └──────────────┘
+```
+
+### Deployment Troubleshooting
+
+**API not starting locally?**
+- Check port 8000 isn't in use
+- Verify `.env` file exists with valid API keys
+- Ensure Python 3.10+ is installed
+
+**Dashboard can't connect to API?**
+- Ensure API is running first
+- Check `API_URL` in `.env` matches API location
+- Verify firewall isn't blocking port 8000
+
+**Render deployment failing?**
+- Check build logs in Render dashboard
+- Verify API keys are set in Environment tab
+- Ensure `render.yaml` is in repo root
+- Confirm Python version compatibility
+
+**Services sleeping (Free tier)?**
+- Render free tier sleeps after 15 min inactivity
+- First request takes ~30 seconds to wake
+- Consider upgrading to paid plan for always-on service
+
+**Database errors in production?**
+- Verify persistent disk is mounted at `/opt/render/project/src/data`
+- Check disk space usage in Render dashboard
+- Review service logs for DuckDB errors
+
+### Deployment Checklist
+
+**Pre-Deployment:**
+- [ ] All tests passing locally (`pytest -v tests/`)
+- [ ] `.env.example` up to date with all required variables
+- [ ] `render.yaml` configured correctly
+- [ ] Secrets NOT committed to git (`.env` in `.gitignore`)
+- [ ] Documentation updated
+
+**Post-Deployment:**
+- [ ] API service deployed and healthy
+- [ ] Dashboard service deployed and healthy
+- [ ] Environment variables set in both services
+- [ ] `API_URL` updated in dashboard
+- [ ] `CORS_ORIGINS` updated in API
+- [ ] Health checks passing
+- [ ] Test live suggestions in dashboard
+- [ ] Verify database persistence
+- [ ] Monitor logs for errors
+
+### Cost Estimates
+
+**Render Free Tier:**
+- 750 hours/month per service
+- Services sleep after 15 min inactivity
+- 1GB persistent disk included
+- **Cost: $0/month** (good for development/testing)
+
+**Render Starter Plan:**
+- $7/month per service
+- Always-on (no sleep)
+- Better performance
+- **Cost: $14/month total** (2 services)
+
+**LLM Provider Costs:**
+- **Groq:** Free tier available with rate limits
+- **OpenAI:** ~$0.10-0.50 per 1K requests
+- **Anthropic:** ~$0.25-1.00 per 1K requests
+
+### Monitoring and Maintenance
+
+**Health Check Commands:**
+```bash
+# Check API status
+curl https://qa-compliance-api.onrender.com/health
+
+# Get event statistics
+curl https://qa-compliance-api.onrender.com/events/stats
+
+# Check latency metrics
+curl https://qa-compliance-api.onrender.com/analytics/latency
+
+# View policy violations
+curl https://qa-compliance-api.onrender.com/analytics/policies
+```
+
+**View Logs:**
+- Render Dashboard → Select Service → Logs tab
+- Real-time log streaming available
+- Search and filter capabilities
+
+**Database Backup:**
+```bash
+# Local backup
+copy data\qa_runs.duckdb data\backups\qa_runs_$(date +%Y%m%d).duckdb
+
+# Export via API
+curl https://qa-compliance-api.onrender.com/events/stats > backup.json
+```
+
+**Update Application:**
+```bash
+# Local
+git pull origin main
+pip install -r requirements.txt
+python start.py
+
+# Production (Render auto-deploys)
+git push origin main
+# Monitor deployment in Render dashboard
+```
 
 ---
 

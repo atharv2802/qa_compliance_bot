@@ -28,6 +28,7 @@ from engine.rules import get_rules_engine
 load_dotenv()
 
 # Configuration
+MODE = os.getenv("MODE", "local")
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 DB_PATH = os.getenv("RUNS_DB", "./data/qa_runs.duckdb")
 SYNTHETIC_DATA_PATH = os.getenv("DATA_DIR", "./data") + "/synthetic/coach_cases.jsonl"
@@ -554,6 +555,10 @@ def main():
     with st.sidebar:
         st.title("🎯 QA Coach")
         st.markdown("---")
+        
+        # Mode indicator
+        mode_color = "🟢" if MODE == "production" else "🔵"
+        st.caption(f"{mode_color} Mode: **{MODE.upper()}**")
         
         # Session ID
         if 'session_id' not in st.session_state:
