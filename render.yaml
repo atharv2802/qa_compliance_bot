@@ -1,11 +1,9 @@
-# Render Blueprint for QA Compliance Bot
-# This file defines the infrastructure needed to deploy the application on Render
-# 
-# To use this blueprint:
-# 1. Push this file to your GitHub repository
-# 2. Connect your repo to Render
-# 3. Render will automatically detect and create these services
-# 4. Set your API keys in Render's dashboard under Environment Variables
+# ============================================================================
+# Render Blueprint for QA Compliance Bot (Free Plan Compatible)
+# ============================================================================
+# This version avoids Render disks (not allowed on free tier)
+# and uses /tmp for ephemeral runtime data.
+# ============================================================================
 
 services:
   # ============================================================================
@@ -14,17 +12,19 @@ services:
   - type: web
     name: qa-compliance-api
     runtime: python
-    region: oregon  # Choose your preferred region
-    plan: free  # Change to 'starter' or higher for production
+    region: oregon
+    plan: free
     branch: main
+    autoDeploy: true
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.api:app --host 0.0.0.0 --port 10000
+    # Ensure /tmp/data exists before starting API
+    startCommand: bash -lc "mkdir -p /tmp/data && uvicorn app.api:app --host 0.0.0.0 --port $PORT"
     healthCheckPath: /health
     envVars:
       # Deployment mode
       - key: MODE
         value: production
-      
+
       # LLM Provider Configuration
       - key: LLM_PROVIDER
         value: groq
@@ -32,50 +32,44 @@ services:
         value: llama-3.1-8b-instant
       - key: LLM_FALLBACK_PROVIDERS
         value: openai
-      
-      # API Keys (set these in Render dashboard - DO NOT commit actual keys!)
+
+      # API Keys (set securely in Render dashboard)
       - key: GROQ_API_KEY
-        sync: false  # This tells Render to manage this secret in the dashboard
+        sync: false
       - key: OPENAI_API_KEY
         sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
-      
+
       # Judge Configuration
       - key: JUDGE_PROVIDER
         value: openai
       - key: JUDGE_MODEL
         value: gpt-4o-mini
-      
-      # Data paths
+
+      # Ephemeral data paths (resets on restart)
       - key: DATA_DIR
-        value: ./data
+        value: /tmp/data
       - key: RUNS_DB
-        value: ./data/qa_runs.duckdb
-      
+        value: /tmp/qa_runs.duckdb
+
       # API Configuration
       - key: API_HOST
         value: 0.0.0.0
       - key: API_PORT
-        value: 10000
-      
-      # CORS - update with your dashboard URL after deployment
+        value: $PORT
+
+      # CORS - update with dashboard URL after deployment
       - key: CORS_ORIGINS
-        value: "*"  # Change to your dashboard URL in production
-      
+        value: "*"  # Replace with your dashboard URL in production
+
       # Logging
       - key: LOG_LEVEL
         value: INFO
-      
+
       # A/B Testing
       - key: AB_TEST_BUCKET
         value: on
-    
-    # Disk storage for DuckDB database
-    disk:
-      name: qa-data
-      mountPath: /opt/render/project/src/data
-      sizeGB: 1
 
   # ============================================================================
   # Streamlit Dashboard Service
@@ -83,25 +77,27 @@ services:
   - type: web
     name: qa-compliance-dashboard
     runtime: python
-    region: oregon  # Should match API region for lower latency
-    plan: free  # Change to 'starter' or higher for production
+    region: oregon
+    plan: free
     branch: main
+    autoDeploy: true
     buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app/dashboard.py --server.port 10000 --server.address 0.0.0.0 --server.headless true
+    # Ensure /tmp/data exists before starting Streamlit
+    startCommand: bash -lc "mkdir -p /tmp/data && streamlit run app/dashboard.py --server.port $PORT --server.address 0.0.0.0 --server.headless true"
     healthCheckPath: /_stcore/health
     envVars:
       # Deployment mode
       - key: MODE
         value: production
-      
-      # API Keys (dashboard needs these for direct coach calls)
+
+      # API Keys (for dashboard use)
       - key: GROQ_API_KEY
         sync: false
       - key: OPENAI_API_KEY
         sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
-      
+
       # LLM Provider Configuration
       - key: LLM_PROVIDER
         value: groq
@@ -109,28 +105,28 @@ services:
         value: llama-3.1-8b-instant
       - key: LLM_FALLBACK_PROVIDERS
         value: openai
-      
+
       # Judge Configuration
       - key: JUDGE_PROVIDER
         value: openai
       - key: JUDGE_MODEL
         value: gpt-4o-mini
-      
-      # API URL (update this after API service is deployed)
-      # Format: https://qa-compliance-api.onrender.com
+
+      # API URL (update after API deploys)
+      # Example: https://qa-compliance-api.onrender.com
       - key: API_URL
         value: https://qa-compliance-api.onrender.com
-      
-      # Data paths (read-only for dashboard)
+
+      # Ephemeral data paths (read-only)
       - key: DATA_DIR
-        value: ./data
+        value: /tmp/data
       - key: RUNS_DB
-        value: ./data/qa_runs.duckdb
-      
+        value: /tmp/qa_runs.duckdb
+
       # Streamlit Configuration
       - key: STREAMLIT_PORT
-        value: 10000
-      
+        value: $PORT
+
       # Logging
       - key: LOG_LEVEL
         value: INFO
@@ -138,12 +134,11 @@ services:
 # ============================================================================
 # Notes:
 # ============================================================================
-# 1. After services are created, set your actual API keys in Render dashboard
-# 2. Update API_URL in dashboard service with your deployed API URL
-# 3. Update CORS_ORIGINS in API service with your dashboard URL
-# 4. The free plan has limitations:
-#    - Services sleep after 15 minutes of inactivity
-#    - 750 hours/month of runtime
-#    - Consider upgrading for production use
-# 5. Database is stored on persistent disk (survives deploys)
-# 6. Both services use port 10000 (Render's default for web services)
+# ✅ Works fully on Render Free Plan
+# ⚠️ Data in /tmp is deleted on restart or redeploy
+# 🔐 Set API keys securely in Render dashboard
+# 🌐 After first deploy:
+#    - Update API_URL in dashboard service with actual backend URL
+#    - Update CORS_ORIGINS in API service with dashboard URL
+# ============================================================================
+
